@@ -24,7 +24,7 @@
         let ano = 2025;
         
         // Constante: declaradas com a palavra-chave const
-        const aluno = "Irineu Noé";
+        const aluno = "Chapolin Colorado";
 
         // Saída (acessando/exibindo os dados)
         console.log(ano);
@@ -93,7 +93,23 @@
         let media = (a + b) / 2
         console.log(media)
 
+        /* Saída de dados personalizada
+        Frase para exemplo:
+        Olá! Me chamo Chapolin Colorado e não vejo a hora de acabar o ano de 2025. */
+
+        // Frase 1: CONCATENAÇÃO (tradicional, antiga)
+
+        console.log('Olá! Me chamo ' + aluno + ' e não vejo a hora de acabar o ano de ' + ano + '.');
         
+        let frase = "Estamos estudando JavaScript na escola Senac ";
+        frase += "Penha, no curso de desenvolver Full-Stack ";
+        frase += "no ano de" + ano +"."
+
+        // No exemplo asima usasmos += (significa concatena e atribui)
+        console.log(frase);
+        
+
+        // Frase 2: TEMPLATE LITERAL/STRING (moderna)
     </script>
 
 </body>
