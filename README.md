@@ -30,3 +30,9 @@ Recursos interativos em geral, como por exemplo:
 - Na prática, um array é uma lista de dados sequenciais, e cada dados é armazenado em uma posição/índice do array.
 
 - **OBS:** a contagem dos íncides **smepre inicia em ZERO**.
+
+## Objetos
+
+Obejtos também são estruturas de dados só que **não-indexados**, ou seja, o acesso aos dados pe feito de forma diferente do que vimos nos arrays. No objeto, acessamos atráves de **propriedades** e **valores** declarados dentro do objeto.
+
+Normalmente, objeto é programado de acordo com algum contexto relacionado ao mundo real.

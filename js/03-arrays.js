@@ -41,7 +41,15 @@ console.log(saida);
 
 console.log(exit); 
 
+/* Array com a MATRIZ DE 2 DIMENSÕES */
+const tecnologias = [
+    ["HTML", "CSS", "JAVASCRIPT"],
+    ["Figma", "Photoshop"],
+    ["PHP", "Node.js", "SQL", "Express"]
+];
 
+// console.log(tecnologias);
 
-
-
+console.log(tecnologias[0][2]);  //JAVASCRIPT 
+console.log(tecnologias[1][0]); //FIGMA
+console.log(tecnologias[2][3]); //Express
