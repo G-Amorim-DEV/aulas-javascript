@@ -31,13 +31,17 @@ console.log(coisas[4])
 let interesses = ["Picadinho", "Lasanha", "Sopa", "Macarronada", "Canelone", "Esfiha", "Pizza"]
 
 /* Os elemntos da lista vão do 0 até o 6, por isso da operação matemática */
+//Utilizando o tamplate string
 let saida = `As minha comidas favoritas são ${interesses[2-1]}, ${interesses[5-1]} e principalmente ${interesses[7-1]}.`
 
+//Utilizando a concatenação
 let exit = "As minhas comidas favoritas são " + interesses[2-1] + ", " + interesses[5-1] + " e principalmente " + interesses[7-1]
 
 console.log(saida);
 
-console.log(exit);
+console.log(exit); 
+
+
 
 
 
