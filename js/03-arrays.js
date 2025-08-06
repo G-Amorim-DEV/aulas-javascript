@@ -21,3 +21,23 @@ console.log(coisas[1])
 console.log(coisas[4])
 
 
+
+/* Exercícios (FAÇA AQUI MESMOS!) */
+
+// 1) Crie um array contendo o nome de 7 coisas que você gosta (exemplos: artistas, músicas, livros, comida, ..., sei lá, inventa!)
+
+// 2) Em seguida, mostre no console uma frase personalizada indicando o segundo, o quinto eo sétimo elemento do array. Use concatenação e/ou tamplate string.
+
+let interesses = ["Picadinho", "Lasanha", "Sopa", "Macarronada", "Canelone", "Esfiha", "Pizza"]
+
+/* Os elemntos da lista vão do 0 até o 6, por isso da operação matemática */
+let saida = `As minha comidas favoritas são ${interesses[2-1]}, ${interesses[5-1]} e principalmente ${interesses[7-1]}.`
+
+let exit = "As minhas comidas favoritas são " + interesses[2-1] + ", " + interesses[5-1] + " e principalmente " + interesses[7-1]
+
+console.log(saida);
+
+console.log(exit);
+
+
+
