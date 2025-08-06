@@ -37,4 +37,29 @@ console.log(livro.titulo)
 console.log(`O meu livro preferido é ${livro.volumes[1]}`)
 
 
+// Exemplo 3 - Array de objetos
+console.log("\nExemplo 3\n");
+const livros = [
+    {
+        titulo: "O Assassinato no Expresso do Oriente",
+        autor: "Agatha Christie"
+    },
+
+    {
+        titulo: "Crepúsculo",
+        autor: "Stephanie Myers"
+    },
+
+    {
+        titulo: "Um livro qualquer",
+        autor: "Fulano de Tal"
+    }
+
+];
+
+console.log(livros);
+
+console.log(livros[2].titulo);
+
+
 
