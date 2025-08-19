@@ -1,4 +1,4 @@
-"user script"
+"user strict"
 
 // Exemplo 1 - Objeto com dados de uma pessoa:
 console.log("Exemplo 1\n");
@@ -84,7 +84,7 @@ const aluno = {
     lista_de_telefones: ["(011)2254-1564", "(011)95684-2578"],
     endereco: {
         rua: "Rua Noé da Sua Conta",
-        numero: "001",
+        numero: "568",
         bairro: "Você Não Sabe Nem EU"
     }
 
@@ -92,11 +92,11 @@ const aluno = {
 
 console.log(aluno)
 
-let nome_do_aluno = `O nome do aluno é ${aluno.nome_completo},`
+let nome_do_aluno = `O aluno ${aluno.nome_completo},`
 
-let telefone_celular = ` e seu telefone celular é ${aluno.lista_de_telefones[1]},`
+let telefone_celular = ` tem o numero de telefone celular ${aluno.lista_de_telefones[1]},`
 
-let bairro_que_mora = ` e ele mora no bairro ${aluno.endereco.bairro}.`
+let bairro_que_mora = ` e mora no bairro ${aluno.endereco.bairro}.`
 
 console.log(nome_do_aluno + telefone_celular + bairro_que_mora)
 
