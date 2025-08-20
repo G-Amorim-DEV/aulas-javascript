@@ -97,7 +97,7 @@ const clientes = [
 ]
 
 for (const prop in clientes) {
-    console.log(`Cliente: ${clientes[prop].nome}, id: ${clientes[prop].identificador}`);
+    console.log(`- Cliente: ${clientes[prop].nome}, id: ${clientes[prop].identificador}`);
 }
 
 console.log("\nExercício sobre Objetos e loops - WHILE");
@@ -105,19 +105,19 @@ console.log("\nExercício sobre Objetos e loops - WHILE");
 i = 0
 
 while (i < clientes.length){
-    console.log(`Cliente: ${clientes[i].nome}, id: ${clientes[i].identificador}`);
+    console.log(`- Cliente: ${clientes[i].nome}, id: ${clientes[i].identificador}`);
     i++;
 }
 
 console.log("\nExercício sobre Objetos e loops - FOR/OF");
 
 for (const cliente of clientes) {
-    console.log(`Cliente: ${cliente.nome}, id: ${cliente.identificador}`);
+    console.log(`- Cliente: ${cliente.nome}, id: ${cliente.identificador}`);
 
 }  
 
 console.log("\nExercício sobre Objetos e loops - FOR/Simples");
 
 for (let i = 0; i < clientes.length; i++){
-    console.log(`Cliente: ${clientes[i].nome}, id: ${clientes[i].identificador}`);
+    console.log(`- Cliente: ${clientes[i].nome}, id: ${clientes[i].identificador}`);
 }
