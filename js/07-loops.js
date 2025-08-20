@@ -41,3 +41,11 @@ for (let i = 0; i < atividadesFisicas.length; i++){
  console.log(`A atividades física que pode ajudar a sua saúde: ${atividadesFisicas[i]}`);
   
 }
+
+console.log("\n---------\n");
+
+//usando loop for/of (exclusivo do JS)
+/* Usamos uma var/const (no caso, atividadeFisica) para acessar cada elemento do array (no caso, atividadesFisicas) */
+for(const atividadesFisica of atividadesFisicas){
+    console,console.log(atividadesFisica);
+}
