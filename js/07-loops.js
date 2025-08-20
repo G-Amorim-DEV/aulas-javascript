@@ -49,3 +49,18 @@ console.log("\n---------\n");
 for(const atividadesFisica of atividadesFisicas){
     console,console.log(atividadesFisica);
 }
+
+console.log("\nExemplo 5: loop e objeto");
+
+const pessoa = {
+    nome: "Fulano da Silva",
+    idade: 40,
+    cidade: "São Paulo",
+    estado: "SP"
+};
+
+// Usando o loop for/in para objetos (exclusivo do JS)
+for(const prop in pessoa){
+    console.log(pessoa[prop]);
+}
+
