@@ -64,3 +64,60 @@ for(const prop in pessoa){
     console.log(pessoa[prop]);
 }
 
+/* 1. Faça um array chamado "clientes" contendo 3 objetos.
+ 
+Cada objeto deverá ter uma propriedade "identificador" (com valores 1, 2 e 3) e uma propriedade "nome" (com os nomes dos clientes: "Dio", "Ozzy" e "Ian").
+ 
+2. Faça um loop (qualquer um dos que vimos) e mostre no console os dados de cada cliente conforme a seguir:
+ 
+- Cliente: Dio, id: 1
+- Cliente: Ozzy, id: 2
+- Cliente: Ian, id: 3 */
+
+//1 - Objeto
+
+console.log("\nExercício sobre Objetos e loops - FOR/IN");
+
+
+const clientes = [
+    {
+        identificador: "1",
+        nome: "Dio"
+    },
+
+    {
+        identificador: "2",
+        nome: "Ozzy"
+    },
+
+    {
+        identificador: "3",
+        nome: "Ian"
+    }
+]
+
+for (const prop in clientes) {
+    console.log(`Cliente: ${clientes[prop].nome}, id: ${clientes[prop].identificador}`);
+}
+
+console.log("\nExercício sobre Objetos e loops - WHILE");
+
+i = 0
+
+while (i < clientes.length){
+    console.log(`Cliente: ${clientes[i].nome}, id: ${clientes[i].identificador}`);
+    i++;
+}
+
+console.log("\nExercício sobre Objetos e loops - FOR/OF");
+
+for (const cliente of clientes) {
+    console.log(`Cliente: ${cliente.nome}, id: ${cliente.identificador}`);
+
+}  
+
+console.log("\nExercício sobre Objetos e loops - FOR/Simples");
+
+for (let i = 0; i < clientes.length; i++){
+    console.log(`Cliente: ${clientes[i].nome}, id: ${clientes[i].identificador}`);
+}
