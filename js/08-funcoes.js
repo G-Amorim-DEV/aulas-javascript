@@ -17,30 +17,30 @@ No JavaScript, existe  várias maneiras de se criar uma função:
 
 */
 
-console.log(" Exemplo 1: função anônima");
+console.log("Exemplo 1: função anônima");
 
 const exemplo1 = function(){
     // corpo da função: ação que a função vai fazer
-    console.log(" Olá Função Anônima! ");   
+    console.log("Olá Função Anônima! ");   
 };
 
 //Chamando/Invocando a função
 exemplo1();
 
-console.log("\n Exemplo 2: Função Nomeada/Declarada.");
+console.log("\nExemplo 2: Função Nomeada/Declarada.");
 
 function exemplo2(){
-    console.log(" Está é uma função nomeada! ");
+    console.log("Está é uma função nomeada! ");
 }
 
 exemplo2()
 
 
-console.log("\n Exemplo 3: Arrow function (Função Flecha/Seta");
+console.log("\nExemplo 3: Arrow function (Função Flecha/Seta");
 
 /* Sintaxe potencialmente mais simples para funções no JavaScript */
 const exemplo3 = () => {
-    console.log(" Sintaxe Arrow Function!");
+    console.log("Sintaxe Arrow Function!");
 };
 
 exemplo3();
@@ -52,12 +52,12 @@ Quando uma funçÃO PRECISA DE VARIOS/DADOS para algum tipo de processamento, el
 Geralemente, ao terminar o porcessamenro dos dados, a função "retorna" para fora um resultado
 */
 
-console.log("\n Exemplo 4: função com parâmetros");
+console.log("\nExemplo 4: função com parâmetros");
 
 
 function saudacao(nome = "Visitante"){
     //console.log(" Olá, "+nome+"!");
-    console.log(` Olá, ${nome}!`);
+    console.log(`Olá, ${nome}!`);
 }
 
 saudacao("Amorim");
@@ -78,6 +78,21 @@ let resultado1 = multiplicar(10, 5);
 let resultado2 = multiplicar(200, 10)
 
 //Exibimos o resultado
-console.log(" Resultado 1: "+resultado1)
-console.log(" Resultado 2: "+resultado2)
-;
+console.log("Resultado 1: "+resultado1);
+console.log("Resultado 2: "+resultado2);
+
+
+console.log("\nExemplo 6: Simplificando com Arrou Function");
+
+
+//Versão 1: Sintaxe declarada/nomeada
+/* function somar(valor1, valor2){
+    return valor1 + valor2
+} */
+
+//Versão 2: Sintaxe Arrow Functiom com retorno implícito
+const somar = (valor1, valor2) => valor1 + valor2;
+
+console.log(somar(150, 500));
+
+
