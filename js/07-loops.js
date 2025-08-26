@@ -75,6 +75,7 @@ Cada objeto deverá ter uma propriedade "identificador" (com valores 1, 2 e 3) e
 - Cliente: Ian, id: 3 */
 
 //1 - Objeto
+console.log("\n---------------------------\n");
 
 console.log("\nExercício sobre Objetos e loops - FOR/IN");
 
@@ -100,6 +101,8 @@ for (const prop in clientes) {
     console.log(`- Cliente: ${clientes[prop].nome}, id: ${clientes[prop].identificador}`);
 }
 
+console.log("\n---------------------------\n");
+
 console.log("\nExercício sobre Objetos e loops - WHILE");
 
 i = 0
@@ -109,12 +112,16 @@ while (i < clientes.length){
     i++;
 }
 
+console.log("\n---------------------------\n");
+
 console.log("\nExercício sobre Objetos e loops - FOR/OF");
 
 for (const cliente of clientes) {
     console.log(`- Cliente: ${cliente.nome}, id: ${cliente.identificador}`);
 
 }  
+
+console.log("\n---------------------------\n");
 
 console.log("\nExercício sobre Objetos e loops - FOR/Simples");
 
