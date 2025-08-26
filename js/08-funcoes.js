@@ -95,4 +95,30 @@ const somar = (valor1, valor2) => valor1 + valor2;
 
 console.log(somar(150, 500));
 
+console.log("\nExemplo 7: formatando valor monetário");
+
+function formatar_moeda(valor){
+    return new Intl.NumberFormat("pt-br", {
+    style: "currency",
+    currency: "BRL"
+    }).format(valor);
+}
+
+let preco = 5000;
+let desconto = preco * 0.10; //10%
+let precoFinal = preco - desconto
+
+console.log("Preço original: "+formatar_moeda(preco));
+console.log("Desconto: "+formatar_moeda(desconto));
+console.log("Preço final: "+formatar_moeda(precoFinal));
+
+//Exemplo: usando recursosn da classe Intl (Internacionalização)
+const exemplo = new Intl.NumberFormat("pt-br", {
+    style: "currency",
+    currency: "BRL"
+}).format(preco);
+
+console.log(exemplo);
+
+
 
