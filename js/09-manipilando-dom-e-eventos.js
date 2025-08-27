@@ -61,12 +61,38 @@ evento.addEventListener("mouseover", function(){
     evento.style.textAlign = "center"
 });
 
-const slectIdReferencia = document.querySelector("#referencia");
+const selectIdReferencia = document.querySelector("#referencia");
 
-slectIdReferencia.addEventListener("click", function(){
+selectIdReferencia.addEventListener("click", function(){
     evento.textContent = "Eventos"
     evento.style.textAlign = "start"
 })
+
+const ativarModoNoturno = document.querySelector("#noturno");
+ativarModoNoturno.addEventListener("click", function() {
+    /* Usamos o toogle para altenar entre a adicionar a classe OU remover a classe, de acordo com cada clique no botão */
+    pagina.classList.toggle("modo_noturno");
+
+    if (pagina.classList.contains("modo_noturno")) {
+        ativarModoNoturno.style.transition = "background-color 1s, color 1s";
+        ativarModoNoturno.textContent = "Desativar";
+    
+    } else {
+        ativarModoNoturno.style.transition = "background-color 0.5s, color 0.5s";
+        ativarModoNoturno.textContent = "Ativar";
+       
+    }
+});
+
+/*  Desafio
+
+1 - Faça a mudança de cores acontecer gradualmente (use o transition!)
+
+2 - Se o modo noturno estiver ativado, ou seja, se a classe modo_noturno estiver aplicado à página, faça o texto do botão mudar para "Desativar".
+Caso Contrario, faça o texto do botão exibir "Ativar"
+*/
+
+
 
 
 
