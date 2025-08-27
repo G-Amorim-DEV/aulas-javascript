@@ -74,11 +74,11 @@ ativarModoNoturno.addEventListener("click", function() {
     pagina.classList.toggle("modo_noturno");
 
     if (pagina.classList.contains("modo_noturno")) {
-        ativarModoNoturno.style.transition = "background-color 1s, color 1s";
+        pagina.style.transition = "1s";
         ativarModoNoturno.textContent = "Desativar";
     
     } else {
-        ativarModoNoturno.style.transition = "background-color 0.5s, color 0.5s";
+        pagina.style.transition = "0.5s";
         ativarModoNoturno.textContent = "Ativar";
        
     }
