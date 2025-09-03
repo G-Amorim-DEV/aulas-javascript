@@ -68,6 +68,14 @@ selectIdReferencia.addEventListener("click", function(){
     evento.style.textAlign = "start"
 })
 
+/*  Desafio
+
+1 - Faça a mudança de cores acontecer gradualmente (use o transition!)
+
+2 - Se o modo noturno estiver ativado, ou seja, se a classe modo_noturno estiver aplicado à página, faça o texto do botão mudar para "Desativar".
+Caso Contrario, faça o texto do botão exibir "Ativar"
+*/
+
 const ativarModoNoturno = document.querySelector("#noturno");
 ativarModoNoturno.addEventListener("click", function() {
     /* Usamos o toogle para altenar entre a adicionar a classe OU remover a classe, de acordo com cada clique no botão */
@@ -84,15 +92,28 @@ ativarModoNoturno.addEventListener("click", function() {
     }
 });
 
-/*  Desafio
+/* Exemplo 02 - Evento usando o <dialog> do Html */
 
-1 - Faça a mudança de cores acontecer gradualmente (use o transition!)
+const janelaModal = document.querySelector("#janelinha");
 
-2 - Se o modo noturno estiver ativado, ou seja, se a classe modo_noturno estiver aplicado à página, faça o texto do botão mudar para "Desativar".
-Caso Contrario, faça o texto do botão exibir "Ativar"
+/* Esta função lida com o evento (mouse) monitorado pelo listener no document 
+
+Se a posição Y do mouse for abaixo de Zero, ou seja, acima do topo do documento, fazemos a janelinha ser exibida (showModal) e desativamos 
 */
+function gerenciarJanela(event){
+    if(event.clientY < 0){
+        janelaModal.showModal()
+        document.removeEventListener("mouseout", gerenciarJanela)
+    }
+}
 
+// Monitorando o eventou mouseout no documento inteiro
+document.addEventListener("mouseout", gerenciarJanela )
 
+/* Selecionamos o botão existente DENTRO da janelaModal (já selecionada anteriormente) */
+const botaoFechar = janelaModal.querySelector("button")
 
-
-
+/* Quando acontecer o acionamento/clique no botão fechar, fazemos a janelaModal fechar(close) */
+botaoFechar.addEventListener("click", function(){
+    janelaModal.close();
+})
